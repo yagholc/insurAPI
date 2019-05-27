@@ -50,6 +50,6 @@ SV_Temp <- function(i, idade, n, b, qx, Ax=1, beninput=T, multi) {  #Função ú
   qxx <- c(qx[(idade+1):(idade+n)])
   pxx <- c(1, cumprod( px[(idade+1):(idade+n-1)]) )
   if (beninput)
-    return(b * sum(v*pxx*qxx)*multi)
-  return(Ax / sum(v*pxx*qxx)*multi)
+    return((b * sum(v*pxx*qxx))*multi)
+  return((Ax / sum(v*pxx*qxx))/multi)
 }
