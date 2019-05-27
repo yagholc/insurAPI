@@ -8,7 +8,7 @@ segCall<-function(cobertura="MN", bp=500000, beninput=T, idade=23){ #preparar pa
   
   dados<-tabua
   #dados <- read.csv('C:/Users/yagho/imsure/insurAPI/data/tabuas.csv', h=T)
-  multi<-2 #definindo um pádrao para mulrtip´liocador para aproximar carregamentos e comissao
+  multi<-1.8 #definindo um pádrao para mulrtip´liocador para aproximar carregamentos e comissao
   switch(cobertura,
          MN={
            qx<-dados$AT.2000_MALE
@@ -20,15 +20,15 @@ segCall<-function(cobertura="MN", bp=500000, beninput=T, idade=23){ #preparar pa
          },
          DG={
            qx<-dados$GAM.71_MALE
-           multi<-multi*2.2/12
+           multi<-multi*1/12
          },
          IP={
            qx<-dados$INV_PERM
-           multi<-multi*0.3/12
+           multi<-multi*0.1/12
          },
          IF={
            qx<-dados$INV_PERM
-           multi<-multi*0.2/12
+           multi<-multi*0.06/12
          })
   #b<-bp
   #Ax<-bp
