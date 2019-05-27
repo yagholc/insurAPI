@@ -1,0 +1,11 @@
+Package: segCall
+Type: Package
+Title: ImSure
+Version: 1.0
+Date: 2019-05-27
+Author: Yagho Lemes
+Maintainer: Yagho Lemes <yagholc@hotmail.com>
+Description: This package is an example of an OpenCPU App. It demonstrates
+    basic functionality of the API and Javascript library.
+License: Apache2
+LazyData: true
