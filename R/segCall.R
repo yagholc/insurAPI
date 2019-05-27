@@ -30,6 +30,8 @@ segCall<-function(cobertura="MN", bp=50, beninput=F, idade=23){ #preparar para r
            qx<-dados$INV_PERM
            multi<-multi*0.2/12
          })
+  b<-bp
+  Ax<-bp
   n<-1
   i<-0.03
   px  <- 1-qx 
