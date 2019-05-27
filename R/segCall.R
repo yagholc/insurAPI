@@ -4,7 +4,7 @@ library(readr)
 
 # Produtos ----------------------------------------------------------------
 
-segCall<-function(cobertura, bp, beninput, idade){ #preparar para receber varias funcoes e UM premio para o total
+segCall<-function(cobertura="MN", bp=50, beninput=F, idade=23){ #preparar para receber varias funcoes e UM premio para o total
   
   dados<-tabuas
   #dados <- read.csv('data/tabuas.csv', h=T)
