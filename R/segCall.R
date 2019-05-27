@@ -44,3 +44,13 @@ segCall<-function(cobertura, bp, beninput, idade){ #preparar para receber varias
   return(Ax / sum(v*pxx*qxx)*multi)
   #V_Temp(0.03, idade, 1, bp, qx, bp, beninput, multi)
 }
+
+SV_Temp <- function(i, idade, n, b, qx, Ax=1, beninput=T, multi) {  #Função única para as duas operações
+  px  <- 1-qx #beninput , o input a ser usado para calculo é o beneficio?
+  v   <- 1/(i+1)^(1:n)
+  qxx <- c(qx[(idade+1):(idade+n)])
+  pxx <- c(1, cumprod( px[(idade+1):(idade+n-1)]) )
+  if (beninput)
+    return(b * sum(v*pxx*qxx)*multi)
+  return(Ax / sum(v*pxx*qxx)*multi)
+}
