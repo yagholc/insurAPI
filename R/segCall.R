@@ -6,8 +6,8 @@ library(readr)
 
 segCall<-function(cobertura="MN", bp=50, beninput=F, idade=23){ #preparar para receber varias funcoes e UM premio para o total
   
-  dados<-tabuas
-  #dados <- read.csv('data/tabuas.csv', h=T)
+  dados<-tabua
+  #dados <- read.csv('C:/Users/yagho/imsure/insurAPI/data/tabuas.csv', h=T)
   multi<-2.5 #definindo um pádrao para mulrtip´liocador para aproximar carregamentos e comissao
   switch(cobertura,
          MN={
