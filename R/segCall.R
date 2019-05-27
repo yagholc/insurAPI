@@ -2,15 +2,12 @@ library(readr)
 # Load data
 
 
-# Tabuas de Vida
-dados <- read.csv('data/tabuas.csv', h=T)
-
-
 # Produtos ----------------------------------------------------------------
 
 segCall<-function(cobertura, bp, beninput, idade){ #preparar para receber varias funcoes e UM premio para o total
   
-  dados <- read.csv('data/tabuas.csv', h=T)
+  dados<-tabuas
+  #dados <- read.csv('data/tabuas.csv', h=T)
   multi<-2.5 #definindo um pádrao para mulrtip´liocador para aproximar carregamentos e comissao
   switch(cobertura,
          MN={
