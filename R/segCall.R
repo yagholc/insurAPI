@@ -41,7 +41,7 @@ segCall<-function(cobertura="MN", bp=50, beninput=F, idade=23){ #preparar para r
   #if (beninput)
   #  return(b * sum(v*pxx*qxx)*multi)
   #return(Ax / sum(v*pxx*qxx)*multi)
-  V_Temp(0.03, idade, 1, bp, qx, bp, beninput, multi)
+  SV_Temp(0.03, idade, 1, bp, qx, bp, beninput, multi)
 }
 
 SV_Temp <- function(i, idade, n, b, qx, Ax=1, beninput=T, multi) {  #Função única para as duas operações
