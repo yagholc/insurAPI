@@ -4,11 +4,11 @@ library(readr)
 
 # Produtos ----------------------------------------------------------------
 
-segCall<-function(cobertura="MN", bp=50, beninput=F, idade=23){ #preparar para receber varias funcoes e UM premio para o total
+segCall<-function(cobertura="MN", bp=500000, beninput=T, idade=23){ #preparar para receber varias funcoes e UM premio para o total
   
   dados<-tabua
   #dados <- read.csv('C:/Users/yagho/imsure/insurAPI/data/tabuas.csv', h=T)
-  multi<-2.5 #definindo um pádrao para mulrtip´liocador para aproximar carregamentos e comissao
+  multi<-2 #definindo um pádrao para mulrtip´liocador para aproximar carregamentos e comissao
   switch(cobertura,
          MN={
            qx<-dados$AT.2000_MALE
