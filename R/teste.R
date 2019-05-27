@@ -1,3 +1,3 @@
-teste<-function(x){
-  x^2
+teste<-function(x, y){
+  x*y
 }
