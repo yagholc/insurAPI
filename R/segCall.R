@@ -30,18 +30,18 @@ segCall<-function(cobertura="MN", bp=50, beninput=F, idade=23){ #preparar para r
            qx<-dados$INV_PERM
            multi<-multi*0.2/12
          })
-  b<-bp
-  Ax<-bp
-  n<-1
-  i<-0.03
-  px  <- 1-qx 
-  v   <- 1/(i+1)^(1:n)
-  qxx <- c(qx[(idade+1):(idade+n)])
-  pxx <- c(1, cumprod( px[(idade+1):(idade+n-1)]) )
-  if (beninput)
-    return(b * sum(v*pxx*qxx)*multi)
-  return(Ax / sum(v*pxx*qxx)*multi)
-  #V_Temp(0.03, idade, 1, bp, qx, bp, beninput, multi)
+  #b<-bp
+  #Ax<-bp
+  #n<-1
+  #i<-0.03
+  #px  <- 1-qx 
+  #v   <- 1/(i+1)^(1:n)
+  #qxx <- c(qx[(idade+1):(idade+n)])
+  #pxx <- c(1, cumprod( px[(idade+1):(idade+n-1)]) )
+  #if (beninput)
+  #  return(b * sum(v*pxx*qxx)*multi)
+  #return(Ax / sum(v*pxx*qxx)*multi)
+  V_Temp(0.03, idade, 1, bp, qx, bp, beninput, multi)
 }
 
 SV_Temp <- function(i, idade, n, b, qx, Ax=1, beninput=T, multi) {  #Função única para as duas operações
