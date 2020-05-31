@@ -85,7 +85,7 @@ casapropria <- function(i=0.04, idade=20, vlrCasa=200000, qx, m=20){
   return((b*(v^m))/Anuid(i, idade, m, 1, qx)  * 11/24)
 }
 
-universidade <- function(i=0.07, idade=0, b=2000, qx, m=20){
+universidade <- function(i=0.055, idade=0, b=2000, qx, m=20){
   #b=b*12
   #r = DiferidoTemp(i=i, idade=idade, b=b, qx=qx, m=m)/Anuid(i, idade, m, 1, qx)/12
   #return(r)
