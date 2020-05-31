@@ -103,7 +103,7 @@ universidade <- function(i=0.07, idade=0, b=2000, qx, m=20){
 # 2: Casa própria
 # 3: Universidade
 
-WlblCalc <-function(idade=20, b=2000, m=40, opt=1){
+prevCall <-function(idade=20, b=2000, m=40, opt=1){
   qx = tabua$AT2000_Suavizada_10_MAS
   
   switch(opt,
