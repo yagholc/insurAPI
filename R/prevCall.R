@@ -1,3 +1,5 @@
+library(readr)
+
 # Funções base ------------------------------------------------------------
 
 Anuid <- function(i, idade, n , b, qx){ #para calcular a variancia... v2<-(1-(1/(1+i))^(1:n))/(1-(1/(1+i)))
@@ -107,15 +109,12 @@ WlblCalc <-function(idade=20, b=2000, m=40, opt=1){
   switch(opt,
          '1'={
            premio <- aposentadoria(idade=idade, b=b, m=m, qx=qx)
-           pro <- "Aposentadoria"
          },
          '2'={
            premio <- casapropria(idade=idade, vlrCasa = b, m=m, qx=qx)
-           pro <- "Casa propria"
          },
          '3'={
            premio <- universidade(idade=idade, b=b, m=m, qx=qx)
-           pro <- "Univ"
          })
   
   return(premio)
