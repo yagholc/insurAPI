@@ -104,7 +104,8 @@ universidade <- function(i=0.07, idade=0, b=2000, qx, m=20){
 # 3: Universidade
 
 prevCall <-function(idade=20, b=2000, m=40, opt=1){
-  qx = tabua$AT2000_Suavizada_10_MAS
+  tabuas = tabua
+  qx = tabuas$AT.2000_MALE #AT2000_Suavizada_10_MAS
   
   switch(opt,
          '1'={
