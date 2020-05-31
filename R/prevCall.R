@@ -88,6 +88,7 @@ universidade <- function(i=0.07, idade=0, b=2000, qx, m=20){
   #b=b*12
   #r = DiferidoTemp(i=i, idade=idade, b=b, qx=qx, m=m)/Anuid(i, idade, m, 1, qx)/12
   #return(r)
+  idade=1
   return(DiferidoTemp(i=i, idade=idade, b=b, qx=qx, m=m)/AnuidF(i, idade, m, qx))
 }
 
