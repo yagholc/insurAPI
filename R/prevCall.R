@@ -118,6 +118,6 @@ prevCall <-function(idade=20, b=2000, m=40, opt=1){
            premio <- universidade(idade=idade, b=b, m=m, qx=qx)
          })
   
-  return(premio)
+  return(abs(premio))
 }
 
