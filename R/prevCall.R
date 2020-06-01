@@ -77,7 +77,7 @@ aposentadoria <- function(i=0.055, idade=20, b=2000, qx, m=40){
   return(Diferido(i=i, idade=idade, b=b, qx=qx, m=m)/AnuidF(i, idade, m, qx))
 }
 
-casapropria <- function(i=0.04, idade=20, vlrCasa=200000, qx, m=20){
+casapropria <- function(i=0.04, idade=20, b=200000, qx, m=20){
   #b = vlrCasa*0.3
   v=1/(1+i)
   idade = 20
