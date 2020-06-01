@@ -114,7 +114,7 @@ prevCall <-function(idade=20, b=2000, m=40, opt=1){
            premio <- aposentadoria(idade=idade, b=b, m=m, qx=qx)
          },
          '2'={
-           premio <- casapropria(idade=idade, vlrCasa = b, m=m, qx=qx)
+           premio <- casapropria(idade=idade, b = b, m=m, qx=qx)
          },
          '3'={
            premio <- universidade(idade=idade, b=b, m=m, qx=qx)
